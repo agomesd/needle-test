@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Card } from "ui";
+import { Schema } from "utils";
 import styles from "./page.module.css";
 
 function Gradient({
@@ -11,6 +12,8 @@ function Gradient({
   conic?: boolean;
   className?: string;
 }): JSX.Element {
+  // eslint-disable-next-line no-console -- debug
+  console.log(Schema.safeParse("test"));
   return (
     <span
       className={[
